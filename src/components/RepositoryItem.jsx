@@ -1,9 +1,9 @@
 export function RepositoryItem (props) { //pega as propriedades pelo props
   return (
     <li>
-          <strong>{props.repository.name ?? 'Default'}</strong> {/* pega a propriedade pelo nome dado no item, se vazio acrescenta 'Default'  */}
+          <strong>{props.repository.name}</strong> 
           <p>{props.repository.description}</p> {/*pega a propriedade dentro da const repository, atributo description*/}
-          <a href={props.repository.link}>
+          <a href={props.repository.html_url}>
             Acessar repositórios
           </a>
         </li>
